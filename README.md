@@ -10,7 +10,7 @@ By leveraging SQL queries, we extract valuable insights to help improve business
 
 📄 Query Language: SQL
 
-📊 Data Processing: SQL Aggregations, Joins, and Window Functions
+📊 Data Processing: SQL Aggregations, Joins, and Window Functions, Common Table Expression
 
 🔍 Data Cleaning: Standardization and Null Handling
 
