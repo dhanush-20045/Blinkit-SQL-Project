@@ -1,33 +1,29 @@
-📊 Blinkit SQL Analysis
+# 📊 Blinkit SQL Analysis  
 
-📌 Project Overview
+## 📌 Project Overview  
+This project analyzes Blinkit Grocery Sales Data using **MS SQL Server** to perform **data cleaning, transformation, and KPI analysis**.  
+The dataset includes details about **product sales, outlet locations, establishment years, fat content, and customer ratings**.  
+By leveraging **SQL queries**, we extract valuable insights to enhance **business decision-making and sales strategy**.  
 
-This project analyzes Blinkit Grocery Sales Data using MS SQL Server to perform data cleaning, transformation, and KPI analysis.The dataset includes details about product sales, outlet locations, establishment years, fat content, and customer ratings.By leveraging SQL queries, we extract valuable insights to enhance business decision-making and sales strategy.
+## 🛠️ Tools & Technologies Used  
+- **🐒 Database:** Microsoft SQL Server  
+- **🗄 Query Language:** SQL  
+- **📈 Data Processing:** SQL Aggregations, Joins, Window Functions, CTEs  
+- **🔍 Data Cleaning:** Standardization, Null Handling  
+- **📉 Data Analysis:** KPI Computation, Sales Insights, Trend Analysis  
 
-🛠️ Tools & Technologies Used
+## 📝 Project Objectives  
+✔ **Data Cleaning** – Standardizing and correcting inconsistencies in dataset.  
+✔ **Total & Average Sales Analysis** – Analyzing sales based on outlet locations and establishment years.  
+✔ **Best-Selling Products** – Identifying top-performing products based on total sales.  
+✔ **Outlet Performance Metrics** – Evaluating outlet sales based on size, location, and type.  
+✔ **Customer Ratings Analysis** – Finding average ratings per outlet type and year.  
 
-🐒 Database: Microsoft SQL Server
+---
 
-🗄 Query Language: SQL
+## 📝 SQL Queries & Key Insights  
 
-📈 Data Processing: SQL Aggregations, Joins, Window Functions, CTEs
-
-🔍 Data Cleaning: Standardization, Null Handling
-
-📉 Data Analysis: KPI Computation, Sales Insights, Trend Analysis
-
-📝 Project Objectives
-
-✔️ Data Cleaning – Standardizing and correcting inconsistencies in dataset.
-✔️ Total & Average Sales Analysis – Analyzing sales based on outlet locations and establishment years.
-✔️ Best-Selling Products – Identifying top-performing products based on total sales.
-✔️ Outlet Performance Metrics – Evaluating outlet sales based on size, location, and type.
-✔️ Customer Ratings Analysis – Finding average ratings per outlet type and year.
-
-📝 SQL Queries & Key Insights
-
-1️⃣ Data Cleaning – Standardizing Item_Fat_Content
-
+### 1️⃣ Data Cleaning – Standardizing `Item_Fat_Content`  
 UPDATE blinkit_data  
 SET Item_Fat_Content =  
     CASE  
@@ -35,11 +31,8 @@ SET Item_Fat_Content =
         WHEN Item_Fat_Content = 'reg' THEN 'Regular'  
         ELSE Item_Fat_Content  
     END;
-
-✅ Ensures consistency by converting different formats of Low Fat and Regular into standard values.
-
+    
 2️⃣ KPI: Total Sales by Location & Establishment Year
-
 SELECT  
     Outlet_Location_Type,  
     outlet_Establishment_year,  
@@ -48,10 +41,7 @@ FROM blinkit_data
 GROUP BY Outlet_Location_Type, outlet_Establishment_year  
 ORDER BY Outlet_Location_Type, outlet_Establishment_year;
 
-✅ Provides insights into revenue generation based on location type and establishment year.
-
 3️⃣ KPI: Best-Selling Products (Top 5)
-
 WITH ItemSales AS (  
     SELECT  
         Item_Identifier,  
@@ -65,10 +55,7 @@ SELECT Item_Identifier, Item_Type, Total_Sales, Sales_Rank
 FROM ItemSales  
 WHERE Sales_Rank <= 5;
 
-✅ Identifies top 5 highest-selling products, helping the business focus on best-performing items.
-
 4️⃣ KPI: Percentage of Sales by Outlet Size
-
 SELECT  
     Outlet_Size,  
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,  
@@ -77,12 +64,9 @@ FROM blinkit_data
 GROUP BY Outlet_Size  
 ORDER BY Total_Sales DESC;
 
-✅ Helps understand which outlet size contributes most to total sales.
-
 📈 Conclusion & Findings
-
-✔️ Sales are highest in Urban areas compared to Rural & Tier-2 cities.
-✔️ Outlets established in earlier years show better sales performance.
-✔️ Best-selling products include high-demand grocery items.
-✔️ Outlet size significantly impacts sales volume.
-✔️ Fat content does not heavily influence total sales.
+✔ Sales are highest in Urban areas compared to Rural & Tier-2 cities.
+✔ Outlets established in earlier years show better sales performance.
+✔ Best-selling products include high-demand grocery items.
+✔ Outlet size significantly impacts sales volume.
+✔ Fat content does not heavily influence total sales.
