@@ -33,6 +33,7 @@ SET Item_Fat_Content =
     END;
     
 2️⃣ KPI: Total Sales by Location & Establishment Year
+
 SELECT  
     Outlet_Location_Type,  
     outlet_Establishment_year,  
@@ -42,6 +43,7 @@ GROUP BY Outlet_Location_Type, outlet_Establishment_year
 ORDER BY Outlet_Location_Type, outlet_Establishment_year;
 
 3️⃣ KPI: Best-Selling Products (Top 5)
+
 WITH ItemSales AS (  
     SELECT  
         Item_Identifier,  
@@ -56,6 +58,7 @@ FROM ItemSales
 WHERE Sales_Rank <= 5;
 
 4️⃣ KPI: Percentage of Sales by Outlet Size
+
 SELECT  
     Outlet_Size,  
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,  
@@ -65,6 +68,7 @@ GROUP BY Outlet_Size
 ORDER BY Total_Sales DESC;
 
 📈 Conclusion & Findings
+
 ✔ Sales are highest in Urban areas compared to Rural & Tier-2 cities.
 ✔ Outlets established in earlier years show better sales performance.
 ✔ Best-selling products include high-demand grocery items.
