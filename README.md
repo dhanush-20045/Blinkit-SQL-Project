@@ -16,11 +16,6 @@ By leveraging SQL queries, we extract valuable insights to help improve business
 
 📉 Data Analysis: KPI Computation, Sales Insights, and Trend Analysis
 
-📂 Project Files
-File Name	Description
-SQL_PROJECT.sql	Contains all SQL queries for data cleaning and analysis
-BlinkIT_Grocery_Data.csv	The dataset used in the analysis (optional for reference)
-README.md	Documentation of the project
 📜 Project Objectives
 ✔️ Data Cleaning – Standardizing and correcting inconsistencies in dataset.
 ✔️ Total & Average Sales Analysis – Analyzing sales based on outlet locations and establishment years.
@@ -88,6 +83,7 @@ SELECT
 FROM blinkit_data
 GROUP BY Outlet_Size
 ORDER BY Total_Sales DESC;
+
 ✅ Helps understand which outlet size contributes the most to total sales.📈 Conclusion & Findings
 ✔️ Sales are highest in Urban areas compared to Rural & Tier-2 cities.
 ✔️ Outlets established in earlier years show better sales performance.
