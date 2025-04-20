@@ -4,6 +4,10 @@
 
 This SQL-based retail analytics project examines Blinkit's sales data to uncover meaningful patterns and relationships in product performance, customer behavior, and store operations. The analysis transforms raw transactional data into strategic insights that inform business decisions across inventory management, marketing, and store operations.
 
+## Datasets 
+
+[Dataset](https://drive.google.com/file/d/1EdSbZUdL9852dLdq14HgYfToQqymtBl-/view?usp=drive_link)
+
 ## Technical Approach
 
 ### The project employs advanced SQL techniques including:
