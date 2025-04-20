@@ -24,8 +24,8 @@ This SQL-based retail analytics project examines Blinkit's sales data to uncover
 
 3) Some missing values in Item Weight.
 
- ### Use Case : Analyze sales performance, product visibility, and outlet efficiency.
-
+ ### **Use Case**  
+Analyze sales performance, product visibility, and outlet efficiency.
 ## Business Case Study: Blinkit Retail Analytics
 
 [Blinkit Analysis](https://docs.google.com/presentation/d/12nw9fsd8uWd46i9OaWb3axxNUSmGRFRs/edit?usp=drive_link&ouid=107901475766506638269&rtpof=true&sd=true)
