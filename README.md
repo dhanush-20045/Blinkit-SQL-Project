@@ -21,13 +21,13 @@ This SQL-based retail analytics project examines Blinkit's sales data to uncover
    
 ### The exploration covers several critical business dimensions:
 
-***Product Analysis: Examination of sales distribution across product categories and attributes
+1) Product Analysis: Examination of sales distribution across product categories and attributes
 
-***Store Performance: Evaluation of outlet effectiveness across different locations and formats
+2) Store Performance: Evaluation of outlet effectiveness across different locations and formats
 
-***Temporal Patterns: Investigation of sales trends across different time periods
+3) Temporal Patterns: Investigation of sales trends across different time periods
 
-***Operational Metrics: Assessment of inventory visibility and customer satisfaction measures
+4) Operational Metrics: Assessment of inventory visibility and customer satisfaction measures
 
 ## Business Applications
 ### The insights generated support various operational improvements:
