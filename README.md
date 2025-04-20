@@ -26,9 +26,33 @@ This SQL-based retail analytics project examines Blinkit's sales data to uncover
 
  ### Use Case : Analyze sales performance, product visibility, and outlet efficiency.
 
-## Business Case Study
+## Business Case Study: Blinkit Retail Analytics
 
 [Blinkit Analysis](https://docs.google.com/presentation/d/12nw9fsd8uWd46i9OaWb3axxNUSmGRFRs/edit?usp=drive_link&ouid=107901475766506638269&rtpof=true&sd=true)
+
+This project analyzes Blinkit's retail operations dataset to uncover actionable insights for business optimization. The data encompasses product attributes (fat content, type, weight), outlet characteristics (location, size, type), and sales performance metrics across multiple stores.
+
+## Key focus areas include:
+
+1) Identifying high-performing product categories and their characteristics
+
+2) Analyzing the relationship between outlet attributes and sales performance
+
+3) Evaluating how product visibility and weight impact sales
+
+4) Comparing performance across different store tiers and locations
+
+## Potential business applications:
+
+1) Inventory optimization by identifying fast-moving products
+
+2) Strategic placement of products based on visibility impact
+
+3) Store format recommendations based on performance analysis
+
+4) Pricing strategy adjustments for different product categories
+
+### The analysis aims to provide data-driven recommendations to enhance Blinkit's operational efficiency, sales performance, and customer satisfaction. 
 
 ## Technical Approach
 
