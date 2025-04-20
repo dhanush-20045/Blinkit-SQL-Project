@@ -6,6 +6,24 @@ This SQL-based retail analytics project examines Blinkit's sales data to uncover
 
 ## Project Datasets 
 
+## The dataset contains Blinkit's product and outlet information with 12 attributes, including:
+
+1) Product details: Item fat content, type, weight, visibility, and sales.
+
+2) Outlet information: Establishment year, identifier, location tier, size, and type.
+
+3) Sales metrics: Total sales figures and outlet ratings (all rated 5 in this sample).
+
+## Key Observations:
+
+1) Mix of regular and low-fat items across categories (Fruits, Frozen Foods, Household, etc.).
+
+2) Outlets vary by location tier (Tier 1–3), size (Small/Medium/High), and type (Supermarket/Grocery).
+
+3) Some missing values in Item Weight.
+
+ Use Case : Analyze sales performance, product visibility, and outlet efficiency.
+
 [Dataset](https://drive.google.com/file/d/1EdSbZUdL9852dLdq14HgYfToQqymtBl-/view?usp=drive_link)
 
 ## Business Case Study
